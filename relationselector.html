@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* adjacent sibiling */
+        div+h2{
+            background-color: chartreuse;
+        }
+        /* general sibiling */
+        div~h3{
+            background-color: cornflowerblue;
+        }
+        /* space decendent cominator( ) */
+        body h4{
+            background-color: darkmagenta;
+        }
+        /* child combinator(>) */
+        body>h1{
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <!-- body of adjacent sibiling -->
+    <div>This is div1</div>
+    <h2>Heading2</h2>
+    <h2>2nd Heading</h2>
+    <div>This is 2nd div</div>
+    <h2>3rd Heading</h2>
+    <hr>
+
+    <!-- body of general sibiling -->
+    <div>parent</div>
+    <h3>child1</h3>
+    <h3>child2</h3>
+    <div>parent2</div>
+    <h3>child3</h3>
+    <hr>
+
+    <!-- space decendent cominator( )  -->
+    <div>This is div1</div>
+    <h4>Heading2</h4>
+    <h4>2nd Heading</h4>
+    <section>
+        <h4>Hello</h4>
+    </section>
+    <div>This is 2nd div</div>
+    <h4>3rd Heading</h4>
+    <hr>
+    
+    <!-- child combinator(>)  -->
+    <div>parent</div>
+    <h1>child1</h1>
+    <h1>child2</h1>
+    <section>
+        <h1>Hello</h1>
+    </section>
+    <div>parent2</div>
+    <h1>child3</h1>
+</body>
+</html>
